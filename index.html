@@ -40,7 +40,7 @@
                 <!-- prompt actions/buttons -->
                 <div class="prompt-actions">
                     <div class="select-wrapper">
-                        <select class="custom-select" required>
+                        <select id="model-select" class="custom-select" required>
                             <option value="" selected disabled>Select Model</option>
                             <option value="black-forest-labs/FLUX.1-dev">FLUX.1-dev</option>
                             <option value="black-forest-labs/FLUX.1-schnell">FLUX.1-schnell</option>
@@ -50,7 +50,7 @@
                         </select>
                     </div>
                     <div class="select-wrapper">
-                        <select class="custom-select" required>
+                        <select id="count-select"  class="custom-select" required>
                             <option value="" selected disabled>Image count</option>
                             <option value="1">1 Image</option>
                             <option value="2">2 Images</option>
@@ -59,7 +59,7 @@
                         </select>
                     </div>
                     <div class="select-wrapper">
-                        <select class="custom-select" required>
+                        <select id="ratio-select"  class="custom-select" required>
                             <option value="" selected disabled>Aspect Ratio</option>
                             <option value="1/1">Square(1:1)</option>
                             <option value="16/9">Landscape(16:9)</option>
@@ -78,6 +78,7 @@
                     <div class="img-card loading">
                         <div class="status-container">
                             <div class="spinner"></div>
+                            <i class="fa-solid fa-triangle-exclamation"></i>
                                <p class="status-text">Generating...</p>
                         </div>
                         <img src="test.png" alt="" class="result-img">
@@ -115,6 +116,7 @@
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
